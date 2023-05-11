@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <style type="text/css">
+        body {
+            font-family: "Roboto", "PingFang TC", "微軟正黑體", "Microsoft JhengHei", "細明體", MingLiU, sans-serif;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+
+        a {
+            font-size: .8rem;
+            color: #777
+        }
+
+        .content {
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #F6F6F6;
+            font-size: 14px;
+            padding: 20px;
+        }
+
+        .approve-btn {
+            display: block;
+            width: 30%;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 15px 0;
+            text-align: center;
+            text-decoration: none;
+            color: #444 !important;
+            background-color: #fdd8aa;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div
+            style="box-sizing: border-box; margin: 0 auto; width: 90%; max-width: 750px; background-color: white; border-top: solid 5px #fdd8aa;; padding: 20px 30px;">
+            <!-- <img src="https://creative-expo.s3.ap-southeast-1.amazonaws.com/creative-expo/files/2023/3/34fc850a-2782-4672-8ec0-44b12557d348.png" alt="" style="display: block;width: 50px;border-radius: 2px;margin-bottom: 10px;" /> -->
+            <h2 style="margin:0 auto;color:#444;font-size:1.5em;font-weight:600;line-height:1.2;text-align:center;">
+                會員認證信
+            </h2>
+            <br>
+            <p style="color:#333;font-size:1em;line-height:1.2;text-align:center;">
+                感謝您註冊「cryptostat」會員，請點擊下方按鈕完成帳號開通
+            </p>
+            <br />
+            <a class="approve-btn" href='{{link}}' target="_blank">開通cryptostat帳號</a>
+            <br>
+            <br>
+            <p style="margin:0 auto;color:#333;font-size:.8em;line-height:normal;text-align:center;">
+                若點擊無效，請複製下方網址至瀏覽器地址欄中開啟：
+            </p>
+            <a href='{{link}}' target="_blank" style="display:block;text-align:center;">{{link}}</a>
+        </div>
+    </div>
+</body>
+
+</html>

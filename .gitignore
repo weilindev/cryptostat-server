@@ -1,0 +1,4 @@
+node_modules/
+logs/
+aws-manage-key/
+.env
