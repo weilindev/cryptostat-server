@@ -14,6 +14,10 @@ import {
 
 const router = express.Router()
 
+router.route('/welcome')
+
+	.get((req, res) => res.json('welcome here!'))
+
 router.route('/register')
 
 	.post((req, res) => {

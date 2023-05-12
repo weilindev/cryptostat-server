@@ -1,6 +1,7 @@
 import { expressjwt as jwt } from 'express-jwt'
 
 const NON_AUTH_USER_ROUTE = [
+	'/api/user/welcome',
 	'/api/user/register',
 	'/api/user/login',
 	'/api/user/forgetpassword',
