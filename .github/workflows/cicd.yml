@@ -11,6 +11,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - run: node -v
-    - run: npm -v
     - run: yarn -v
+    - run: yarn install
