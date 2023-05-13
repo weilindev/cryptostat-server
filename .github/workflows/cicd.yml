@@ -13,12 +13,8 @@ jobs:
     - name: Action - checkout
       uses: actions/checkout@v3
 
-    # - name: Setup yarn
-    #   run: npm install yarn
-
     - name: Install dependencies
-      run: yarn install
+      run: rm -rf node_modules && yarn install --frozen-lockfile
 
-    # - name: Uninstall Yarn
-    #   if: always()
-    #   run: npm uninstall yarn
+    - name: Restart pm2
+      run: pm2 restart cryptostat-server
