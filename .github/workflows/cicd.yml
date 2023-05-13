@@ -13,12 +13,12 @@ jobs:
     - name: Action - checkout
       uses: actions/checkout@v3
 
-    - name: Setup yarn
-      run: npm install yarn
+    # - name: Setup yarn
+    #   run: npm install yarn
 
     - name: Install dependencies
       run: yarn install
 
-    - name: Uninstall Yarn
-      if: always()
-      run: npm uninstall yarn
+    # - name: Uninstall Yarn
+    #   if: always()
+    #   run: npm uninstall yarn
